@@ -1,34 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Projeto GitHub User Search
 
-## Getting Started
+<p align="center">
+  <img src="public/exemple.png"
+  alt="GitHub User Search"
+  style="width: 300px; height: 550px;">
+</p>
 
-First, run the development server:
+O GitHub User Search é um projeto em Next.JS 13 que consome a API do GitHub para buscar informações de usuários com base no nome de usuário fornecido. O projeto é desenvolvido usando TypeScript e Styled Components para a estilização. Além disso, também utiliza React Virtualized para renderização otimizada da lista de repositórios públicos do usuário. O ESLint é configurado para garantir a consistência do código e o Axios é utilizado para fazer requisições à API do GitHub. 🤖
+
+## Funcionalidades ⚙️
+
+- Busca de usuários do GitHub por nome de usuário 🔍
+- Exibição das informações do usuário encontrado, incluindo:
+  - Nome
+  - Foto do perfil 🖼️
+  - Biografia
+  - Local de trabalho
+  - Local de residência 🏠
+- Listagem de todos os repositórios públicos do usuário com renderização otimizada usando React Virtualized. 📚
+
+## Pré-requisitos 🛠️
+
+Certifique-se de ter o [Node.js](https://nodejs.org) instalado em sua máquina. 🖥️
+
+## Instalação 🚀
+
+1. Clone este repositório para o seu ambiente local:
+
+```bash
+git clone https://github.com/CarolAguera/github-user-search.git
+```
+
+2. Acesse o diretório do projeto:
+
+```bash
+cd github-user-search
+```
+
+3. Instale as dependências necessárias:
+
+```bash
+npm install
+```
+
+## Executando o projeto ▶️
+
+Você pode iniciar o servidor de desenvolvimento localmente. Basta executar o seguinte comando:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse `http://localhost:3000` em seu navegador para visualizar o aplicativo. 🌐
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estrutura do Projeto 📂
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+A estrutura de diretórios do projeto é a seguinte:
 
-## Learn More
+```
+.
+├── components/
+│   ├── ButtonsMacOs.tsx
+│   ├── GitHubRepoList.tsx
+│   └── User.tsx
+├── icons/
+│   ├── CodeIcon.tsx
+│   └── GitHubIcon.tsx
+├── services/
+│   ├── get-repositories.ts
+│   ├── get-user.ts
+│   └──service-contract.ts
+├── public/
+│   ├── exemple.png
+│   └── github.svg
+├── .eslintrc.json
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Contribuições 🤝
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões para melhorar o projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Licença 📜
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este projeto está licenciado sob a [MIT License](LICENSE). 📄
